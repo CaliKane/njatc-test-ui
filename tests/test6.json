@@ -1,0 +1,212 @@
+[
+    {
+        "question": "Calculate resistance: If V = 12 volts and I = 3 amps, what is R?",
+        "directions": "Use Ohm’s Law (R = V/I) to find resistance.",
+        "options": ["R = 4 ohms", "R = 6 ohms", "R = 8 ohms", "R = 12 ohms"],
+        "answer": "R = 4 ohms",
+        "hint": "Divide voltage by current.",
+        "tip": "Check: 12 / 3 = 4.",
+        "explanation": "R = V/I = 12/3 = 4 ohms. Verify: 12 = 3 * 4, correct.",
+        "type": "Algebra"
+    },
+    {
+        "question": "What is the main idea of: 'Grounding prevents shocks...'",
+        "passage": "Grounding prevents electrical shocks by redirecting excess current.",
+        "directions": "Identify the primary focus.",
+        "options": ["Grounding", "Shock prevention", "Excess current", "Electrical safety"],
+        "answer": "Grounding",
+        "hint": "Focus on the key method described.",
+        "tip": "Read the first sentence.",
+        "explanation": "The passage emphasizes grounding as the main focus for preventing shocks.",
+        "type": "Reading"
+    },
+    {
+        "question": "Calculate power: If V = 24 volts and I = 2 amps, what is P?",
+        "directions": "Use P = VI to find power.",
+        "options": ["P = 36 watts", "P = 48 watts", "P = 60 watts", "P = 72 watts"],
+        "answer": "P = 48 watts",
+        "hint": "Multiply voltage by current.",
+        "tip": "Check: 24 * 2 = 48.",
+        "explanation": "P = VI = 24 * 2 = 48 watts. Verify: 24 * 2 = 48, correct.",
+        "type": "Algebra"
+    },
+    {
+        "question": "What detail supports safety in: 'Insulation cut shocks by 50%'",
+        "passage": "Insulation cut electrical shocks by 50%, improving worker safety.",
+        "directions": "Select the evidence for safety improvement.",
+        "options": ["Insulation", "Cut shocks", "Worker safety", "Electrical shocks"],
+        "answer": "Cut shocks",
+        "hint": "Look for specific data.",
+        "tip": "Focus on the percentage.",
+        "explanation": "The 50% shock reduction directly supports safety from insulation.",
+        "type": "Reading"
+    },
+    {
+        "question": "Solve for I: If V = 18 volts and R = 6 ohms, what is I?",
+        "directions": "Use Ohm’s Law (I = V/R) to find current.",
+        "options": ["I = 2 amps", "I = 3 amps", "I = 4 amps", "I = 6 amps"],
+        "answer": "I = 3 amps",
+        "hint": "Divide voltage by resistance.",
+        "tip": "Check: 18 / 6 = 3.",
+        "explanation": "I = V/R = 18/6 = 3 amps. Verify: 18 = 3 * 6, correct.",
+        "type": "Algebra"
+    },
+    {
+        "question": "What is the purpose of: 'Fuses stop overloads...'",
+        "passage": "Fuses stop circuit overloads to protect wiring.",
+        "directions": "Determine the author’s intent.",
+        "options": ["Inform", "Persuade", "Entertain", "Criticize"],
+        "answer": "Inform",
+        "hint": "Look for educational intent.",
+        "tip": "Focus on 'stop overloads.'",
+        "explanation": "The passage informs about fuses’ role in overload protection.",
+        "type": "Reading"
+    },
+    {
+        "question": "Calculate voltage: If P = 60 watts and I = 5 amps, what is V?",
+        "directions": "Use V = P/I to find voltage.",
+        "options": ["V = 10 volts", "V = 12 volts", "V = 15 volts", "V = 20 volts"],
+        "answer": "V = 12 volts",
+        "hint": "Divide power by current.",
+        "tip": "Check: 60 / 5 = 12.",
+        "explanation": "V = P/I = 60/5 = 12 volts. Verify: 60 = 12 * 5, correct.",
+        "type": "Algebra"
+    },
+    {
+        "question": "What tone is used in: 'Grounding is essential...'",
+        "passage": "Grounding is essential to prevent electrical hazards.",
+        "directions": "Identify the tone.",
+        "options": ["Firm", "Casual", "Sarcastic", "Playful"],
+        "answer": "Firm",
+        "hint": "Look for decisive language.",
+        "tip": "Focus on 'essential.'",
+        "explanation": "‘Essential’ conveys a firm tone about grounding’s importance.",
+        "type": "Reading"
+    },
+    {
+        "question": "Solve for R: If V = 30 volts and I = 2 amps, what is R?",
+        "directions": "Use Ohm’s Law (R = V/I) to find resistance.",
+        "options": ["R = 10 ohms", "R = 12 ohms", "R = 15 ohms", "R = 18 ohms"],
+        "answer": "R = 15 ohms",
+        "hint": "Divide voltage by current.",
+        "tip": "Check: 30 / 2 = 15.",
+        "explanation": "R = V/I = 30/2 = 15 ohms. Verify: 30 = 2 * 15, correct.",
+        "type": "Algebra"
+    },
+    {
+        "question": "What evidence supports efficiency in: 'Tools cut time by 20%'",
+        "passage": "Electrical tools cut wiring time by 20%, boosting efficiency.",
+        "directions": "Select the evidence for efficiency improvement.",
+        "options": ["Electrical tools", "Cut time", "Boosting efficiency", "Wiring time"],
+        "answer": "Cut time",
+        "hint": "Look for specific data.",
+        "tip": "Focus on the percentage.",
+        "explanation": "The 20% time reduction supports efficiency from tools.",
+        "type": "Reading"
+    },
+    {
+        "question": "Calculate I: If P = 100 watts and V = 25 volts, what is I?",
+        "directions": "Use I = P/V to find current.",
+        "options": ["I = 2 amps", "I = 4 amps", "I = 5 amps", "I = 6 amps"],
+        "answer": "I = 4 amps",
+        "hint": "Divide power by voltage.",
+        "tip": "Check: 100 / 25 = 4.",
+        "explanation": "I = P/V = 100/25 = 4 amps. Verify: 100 = 25 * 4, correct.",
+        "type": "Algebra"
+    },
+    {
+        "question": "What is the main point of: 'Circuits need proper sizing...'",
+        "passage": "Circuits need proper sizing to handle electrical loads safely.",
+        "directions": "Identify the primary focus.",
+        "options": ["Circuit sizing", "Electrical loads", "Safety handling", "Proper circuits"],
+        "answer": "Circuit sizing",
+        "hint": "Focus on the key requirement.",
+        "tip": "Read the full sentence.",
+        "explanation": "The passage emphasizes circuit sizing as the main focus for safety.",
+        "type": "Reading"
+    },
+    {
+        "question": "Solve for V: If R = 8 ohms and I = 3 amps, what is V?",
+        "directions": "Use V = IR to find voltage.",
+        "options": ["V = 18 volts", "V = 24 volts", "V = 30 volts", "V = 36 volts"],
+        "answer": "V = 24 volts",
+        "hint": "Multiply resistance by current.",
+        "tip": "Check: 8 * 3 = 24.",
+        "explanation": "V = IR = 8 * 3 = 24 volts. Verify: 24 / 8 = 3, correct.",
+        "type": "Algebra"
+    },
+    {
+        "question": "What detail shows safety in: 'Training cut faults by 30%'",
+        "passage": "Electrical training cut faults by 30%, enhancing safety.",
+        "directions": "Select the evidence for safety improvement.",
+        "options": ["Electrical training", "Cut faults", "Enhancing safety", "Faults reduction"],
+        "answer": "Cut faults",
+        "hint": "Look for specific data.",
+        "tip": "Focus on the percentage.",
+        "explanation": "The 30% fault reduction supports safety from training.",
+        "type": "Reading"
+    },
+    {
+        "question": "Calculate P: If V = 15 volts and R = 5 ohms, what is P?",
+        "directions": "Use P = V^2/R to find power.",
+        "options": ["P = 45 watts", "P = 50 watts", "P = 55 watts", "P = 60 watts"],
+        "answer": "P = 45 watts",
+        "hint": "Square voltage, then divide by resistance.",
+        "tip": "Check: (15 * 15) / 5 = 45.",
+        "explanation": "P = V^2/R = 15^2 / 5 = 225 / 5 = 45 watts. Verify: I = 15/5 = 3, P = 15 * 3 = 45.",
+        "type": "Algebra"
+    },
+    {
+        "question": "What is the tone of: 'Wiring must be checked...'",
+        "passage": "Wiring must be checked to ensure electrical safety.",
+        "directions": "Identify the tone.",
+        "options": ["Urgent", "Casual", "Sarcastic", "Indifferent"],
+        "answer": "Urgent",
+        "hint": "Look for directive language.",
+        "tip": "Focus on 'must.'",
+        "explanation": "‘Must’ conveys an urgent tone about wiring safety.",
+        "type": "Reading"
+    },
+    {
+        "question": "Solve for R: If P = 80 watts and V = 20 volts, what is R?",
+        "directions": "Use R = V^2/P to find resistance.",
+        "options": ["R = 4 ohms", "R = 5 ohms", "R = 6 ohms", "R = 8 ohms"],
+        "answer": "R = 5 ohms",
+        "hint": "Square voltage, then divide by power.",
+        "tip": "Check: (20 * 20) / 80 = 5.",
+        "explanation": "R = V^2/P = 20^2 / 80 = 400 / 80 = 5 ohms. Verify: I = 20/5 = 4, P = 20 * 4 = 80.",
+        "type": "Algebra"
+    },
+    {
+        "question": "What conclusion is drawn in: 'Insulation stopped all shocks...'",
+        "passage": "Insulation stopped all electrical shocks, proving its value.",
+        "directions": "Determine the conclusion.",
+        "options": ["Insulation is valuable", "Shocks occurred", "Safety is optional", "Insulation failed"],
+        "answer": "Insulation is valuable",
+        "hint": "Look for the final outcome.",
+        "tip": "Focus on 'proving its value.'",
+        "explanation": "The passage concludes insulation is valuable due to no shocks.",
+        "type": "Reading"
+    },
+    {
+        "question": "Calculate I: If V = 36 volts and R = 12 ohms, what is I?",
+        "directions": "Use I = V/R to find current.",
+        "options": ["I = 2 amps", "I = 3 amps", "I = 4 amps", "I = 5 amps"],
+        "answer": "I = 3 amps",
+        "hint": "Divide voltage by resistance.",
+        "tip": "Check: 36 / 12 = 3.",
+        "explanation": "I = V/R = 36/12 = 3 amps. Verify: 36 = 3 * 12, correct.",
+        "type": "Algebra"
+    },
+    {
+        "question": "What detail supports efficiency in: 'Systems cut time by 25%'",
+        "passage": "New systems cut installation time by 25%, improving efficiency.",
+        "directions": "Select the evidence for efficiency improvement.",
+        "options": ["New systems", "Cut time", "Improving efficiency", "Installation time"],
+        "answer": "Cut time",
+        "hint": "Look for specific data.",
+        "tip": "Focus on the percentage.",
+        "explanation": "The 25% time reduction supports efficiency from systems.",
+        "type": "Reading"
+    }
+]

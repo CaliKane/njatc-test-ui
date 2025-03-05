@@ -1,110 +1,119 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const testArea = document.getElementById("test-area");
-    const submitBtn = document.getElementById("submit-btn");
-    const resultDiv = document.getElementById("result");
-    const timerDiv = document.getElementById("timer");
-    const progressFill = document.getElementById("progress-fill");
-    let score = 0;
-    let attempts = {};
-    let timeLeft = 32 * 60; // 32 minutes in seconds (15 min math + 17 min reading)
-    let timer;
+document.addEventListener('DOMContentLoaded', () => {
+    const questionDiv = document.getElementById('question');
+    const optionsDiv = document.getElementById('options');
+    const hintDiv = document.getElementById('hint');
+    const resultDiv = document.getElementById('result');
+    const nextButton = document.getElementById('next');
+    const soundToggle = document.getElementById('soundToggle');
+    let currentTest = 'test1.json';
+    let questions = [];
+    let currentQuestion = 0;
+    let attempts = 0;
+    let lastHintTime = 0;
+    let soundEnabled = false;
+    let answered = false;
 
-    // Start timer
-    function startTimer() {
-        timer = setInterval(() => {
-            timeLeft--;
-            const minutes = Math.floor(timeLeft / 60);
-            const seconds = timeLeft % 60;
-            timerDiv.textContent = `Time Remaining: ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-            if (timeLeft <= 0) {
-                clearInterval(timer);
-                alert("Time's up! Submit your answers.");
-                submitBtn.click();
-            }
-        }, 1000);
+    async function loadTest(file) {
+        try {
+            const response = await fetch(`tests/${file}`);
+            questions = await response.json();
+            displayQuestion();
+        } catch (e) {
+            console.error('Error loading test:', e);
+            resultDiv.textContent = 'Error loading test. Please check console.';
+        }
     }
 
-    // Load test data
-    fetch("tests/test1.json")
-        .then(response => response.json())
-        .then(data => {
-            renderTest(data);
-            startTimer();
-        });
+    function displayQuestion() {
+        if (currentQuestion >= questions.length) {
+            questionDiv.textContent = 'Test Completed!';
+            optionsDiv.innerHTML = '';
+            hintDiv.classList.add('hint-hidden');
+            resultDiv.textContent = '';
+            nextButton.style.display = 'none';
+            return;
+        }
 
-    function renderTest(questions) {
-        questions.forEach((q, index) => {
-            const div = document.createElement("div");
-            div.className = "question";
-            div.innerHTML = `
-                <p>${q.passage ? q.passage + "<br>" : ""}${q.question}</p>
-                ${q.options.map((opt, i) => `
-                    <label>
-                        <input type="radio" name="q${index}" value="${opt}"> ${opt}
-                    </label><br>
-                `).join("")}
-                <span class="hint">${q.hint}</span>
-                <div id="tip${index}" class="tip"></div>
-                <div id="explanation${index}" class="tip" style="display: none;"></div>
-            `;
-            testArea.appendChild(div);
-            attempts[index] = 0;
-            updateProgress((index + 1) / questions.length * 100);
-        });
-    }
-
-    function updateProgress(percentage) {
-        progressFill.style.width = `${percentage}%`;
-    }
-
-    submitBtn.addEventListener("click", () => {
-        score = 0;
-        fetch("tests/test1.json")
-            .then(response => response.json())
-            .then(questions => {
-                let allAnswered = true;
-                questions.forEach((q, index) => {
-                    const selected = document.querySelector(`input[name="q${index}"]:checked`);
-                    if (!selected) {
-                        allAnswered = false;
-                        return;
-                    }
-
-                    if (selected.value === q.answer) {
-                        score++;
-                        playSound("correct.mp3");
-                        document.getElementById(`tip${index}`).style.display = "none";
-                        document.getElementById(`explanation${index}`).style.display = "none";
-                    } else {
-                        attempts[index]++;
-                        if (attempts[index] < 3) {
-                            playSound("incorrect.mp3");
-                            document.getElementById(`tip${index}`).innerText = q.tip;
-                            document.getElementById(`tip${index}`).style.display = "block";
-                            alert("Try again! You have " + (3 - attempts[index]) + " attempts left.");
-                            return; // Stop grading until corrected
-                        } else {
-                            playSound("incorrect.mp3");
-                            document.getElementById(`tip${index}`).style.display = "none";
-                            document.getElementById(`explanation${index}`).innerText = `Correct Answer: ${q.answer}. Explanation: ${q.explanation || "See hint for guidance."}`;
-                            document.getElementById(`explanation${index}`).style.display = "block";
-                        }
-                    }
-                });
-
-                if (allAnswered) {
-                    clearInterval(timer);
-                    const percentage = (score / questions.length) * 100;
-                    resultDiv.innerHTML = `Score: ${percentage}%`;
-                    if (percentage >= 80) playSound("pass.mp3");
-                } else {
-                    alert("Please answer all questions before submitting!");
-                }
+        const q = questions[currentQuestion];
+        questionDiv.textContent = `${q.question} (${q.directions})`;
+        optionsDiv.innerHTML = q.options.map((opt, i) => 
+            `<button class="option" data-index="${i}">${opt}</button>`).join('');
+        hintDiv.textContent = 'Hover for hint (after 30s or 1 wrong attempt)';
+        hintDiv.classList.add('hint-hidden');
+        resultDiv.textContent = '';
+        attempts = 0; // Reset attempts for each new question
+        answered = false;
+        document.querySelectorAll('.option').forEach(button => {
+            button.addEventListener('click', (e) => {
+                handleAnswer(e);
+                answered = true;
+                nextButton.disabled = false;
             });
+        });
+        nextButton.disabled = true; // Disable until an answer is selected
+    }
+
+    function handleAnswer(event) {
+        const selected = event.target.dataset.index;
+        const q = questions[currentQuestion];
+        attempts++;
+
+        if (!q.options[selected]) {
+            console.error('Invalid option selected');
+            return;
+        }
+
+        if (q.options[selected] === q.answer) {
+            resultDiv.textContent = 'Correct! ' + q.explanation;
+            if (soundEnabled) playSound('correct');
+            setTimeout(() => {
+                currentQuestion++;
+                displayQuestion();
+            }, 1000);
+        } else if (attempts < 3) {
+            resultDiv.textContent = 'Incorrect. Try again. Attempts left: ' + (3 - attempts);
+            if (soundEnabled) playSound('incorrect');
+            if (attempts === 1) showHint();
+        } else {
+            resultDiv.textContent = `Incorrect. The answer is ${q.answer}. ${q.explanation}`;
+            if (soundEnabled) playSound('incorrect');
+            setTimeout(() => {
+                currentQuestion++;
+                displayQuestion();
+            }, 1000);
+        }
+    }
+
+    function showHint() {
+        const now = Date.now();
+        if (now - lastHintTime < 30000 && attempts < 2) return;
+        
+        const q = questions[currentQuestion];
+        hintDiv.textContent = attempts === 1 ? q.hint : q.second_hint;
+        hintDiv.classList.remove('hint-hidden');
+        lastHintTime = now;
+    }
+
+    hintDiv.addEventListener('mouseover', showHint);
+    hintDiv.addEventListener('mouseout', () => hintDiv.classList.add('hint-hidden'));
+
+    nextButton.addEventListener('click', () => {
+        if (!answered) {
+            resultDiv.textContent = 'Please answer the question before submitting!';
+            return;
+        }
+        currentQuestion++;
+        displayQuestion();
     });
 
-    function playSound(file) {
-        const audio = new Audio(`sounds/${file}`);
-        audio.play();
+    soundToggle.addEventListener('change', (e) => {
+        soundEnabled = e.target.checked;
+    });
+
+    function playSound(type) {
+        const audio = new Audio(`sounds/${type}.mp3`);
+        audio.play().catch(e => console.error('Sound error:', e));
     }
+
+    loadTest(currentTest);
 });
