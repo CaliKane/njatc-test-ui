@@ -3,40 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NJATC Practice Test</title>
+    <title>IBEW Aptitude Test UI</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <style>
-        .hint-indicator::after {
-            content: " (hover after 30s)";
-            color: #888;
-            font-size: 0.8em;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="logo.png" alt="CryptoEduAI Logo" class="logo">
-            <h1>CryptoEduAI</h1>
-            <h2>Electrical International Brotherhood of Electrical Workers (IBEW) Practice Test</h2>
-        </header>
-        <select id="test-select">
-            <option value="tests/test1.json">Test 1</option>
-            <option value="tests/test2.json">Test 2</option>
-            <option value="tests/test3.json">Test 3</option>
-            <option value="tests/test4.json">Test 4</option>
-            <option value="tests/test5.json">Test 5</option>
-            <option value="tests/test6.json">Bonus: Electrical Context Test</option>
-        </select>
-        <div id="timer"></div>
-        <div id="progress-bar">
-            <div id="progress-fill"></div>
-        </div>
-        <div id="test-area"></div>
-        <button id="submit-btn">Submit Answers</button>
+    <div id="app">
+        <h1>IBEW Aptitude Test</h1>
+        <div id="question"></div>
+        <div id="options"></div>
+        <div id="hint" class="hint-hidden"></div>
         <div id="result"></div>
-        <button id="study-guide-btn" onclick="window.location.href='reading-material.html'">View Study Guide</button>
+        <button id="next">Next Question</button>
+        <div id="soundControls">
+            <label><input type="checkbox" id="soundToggle"> Enable Sound</label>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

@@ -1,3 +1,4 @@
+// Ensure script runs after DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     const questionDiv = document.getElementById('question');
     const optionsDiv = document.getElementById('options');
@@ -5,6 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultDiv = document.getElementById('result');
     const nextButton = document.getElementById('next');
     const soundToggle = document.getElementById('soundToggle');
+
+    // Check for null elements and log errors
+    if (!questionDiv || !optionsDiv || !hintDiv || !resultDiv || !nextButton || !soundToggle) {
+        console.error('One or more DOM elements not found. Check index.html IDs.');
+        return;
+    }
+
     let currentTest = 'test1.json';
     let questions = [];
     let currentQuestion = 0;
@@ -41,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         hintDiv.textContent = 'Hover for hint (after 30s or 1 wrong attempt)';
         hintDiv.classList.add('hint-hidden');
         resultDiv.textContent = '';
-        attempts = 0; // Reset attempts for each new question
+        attempts = 0;
         answered = false;
         document.querySelectorAll('.option').forEach(button => {
             button.addEventListener('click', (e) => {
@@ -50,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 nextButton.disabled = false;
             });
         });
-        nextButton.disabled = true; // Disable until an answer is selected
+        nextButton.disabled = true;
     }
 
     function handleAnswer(event) {
