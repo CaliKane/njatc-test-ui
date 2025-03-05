@@ -1,0 +1,21 @@
+[
+    {
+        "type": "algebra",
+        "question": "Solve: 3x - 7 = 14",
+        "options": ["5", "7", "9", "11"],
+        "answer": "7",
+        "hint": "Isolate x by adding 7, then divide by 3.",
+        "tip": "Check your work: 3(7) - 7 = 14.",
+        "explanation": "Add 7 to both sides: 3x - 7 + 7 = 14 + 7, so 3x = 21. Divide by 3: x = 21 / 3 = 7."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians train for years...",
+        "question": "What is the main goal of training?",
+        "options": ["Design", "Prepare workers", "Sell tools", "Enforce codes"],
+        "answer": "Prepare workers",
+        "hint": "Look for the purpose in the passage.",
+        "tip": "The passage focuses on skill-building.",
+        "explanation": "The passage states training prepares workers through instruction and experience, making 'Prepare workers' correct."
+    }
+]
