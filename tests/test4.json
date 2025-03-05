@@ -1,0 +1,192 @@
+[
+    {
+        "type": "algebra",
+        "question": "Solve: 6x - 4 = 20",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "hint": "Isolate x by adding 4, then divide by 6.",
+        "tip": "Check: 6(4) - 4 = 20.",
+        "explanation": "Add 4: 6x - 4 + 4 = 20 + 4, so 6x = 24. Divide by 6: x = 24 / 6 = 4."
+    },
+    {
+        "type": "algebra",
+        "question": "Simplify: 2(x + 3) + 4x",
+        "options": ["6x + 6", "2x + 6", "6x + 3", "4x + 6"],
+        "answer": "6x + 6",
+        "hint": "Distribute 2, then combine like terms.",
+        "tip": "Focus on distribution first.",
+        "explanation": "Distribute: 2(x + 3) = 2x + 6. Add 4x: 2x + 6 + 4x = 6x + 6."
+    },
+    {
+        "type": "algebra",
+        "question": "Next in sequence: 3, 7, 11, 15, ___",
+        "options": ["17", "19", "21", "23"],
+        "answer": "19",
+        "hint": "Find the pattern by checking differences.",
+        "tip": "Each number increases by 4.",
+        "explanation": "Differences: 7 - 3 = 4, 11 - 7 = 4, 15 - 11 = 4. Add 4: 15 + 4 = 19."
+    },
+    {
+        "type": "algebra",
+        "question": "Factor: x^2 - 5x + 6",
+        "options": ["(x - 2)(x - 3)", "(x - 1)(x - 6)", "(x - 4)(x - 2)", "(x - 3)(x - 2)"],
+        "answer": "(x - 2)(x - 3)",
+        "hint": "Find factors of 6 that add to -5.",
+        "tip": "Try -2 and -3.",
+        "explanation": "Numbers: -2 × -3 = 6, -2 + -3 = -5. Factors: (x - 2)(x - 3). Verify: x^2 - 3x - 2x + 6 = x^2 - 5x + 6."
+    },
+    {
+        "type": "algebra",
+        "question": "If y = x^2 + 3 and x = 2, find y",
+        "options": ["7", "8", "9", "10"],
+        "answer": "7",
+        "hint": "Substitute x = 2 into the equation.",
+        "tip": "Calculate the square first.",
+        "explanation": "Substitute: y = 2^2 + 3 = 4 + 3 = 7."
+    },
+    {
+        "type": "algebra",
+        "question": "Solve: (x/2) - 2 = 3",
+        "options": ["5", "7", "10", "12"],
+        "answer": "10",
+        "hint": "Isolate x by adding 2, then multiply by 2.",
+        "tip": "Check: (10/2) - 2 = 3.",
+        "explanation": "Add 2: (x/2) - 2 + 2 = 3 + 2, so x/2 = 5. Multiply by 2: x = 5 × 2 = 10."
+    },
+    {
+        "type": "algebra",
+        "question": "Simplify: x^4 / x^2",
+        "options": ["x^2", "x^6", "x^8", "x^4"],
+        "answer": "x^2",
+        "hint": "Subtract the exponents when dividing same bases.",
+        "tip": "Remember the rule for exponents.",
+        "explanation": "x^4 / x^2 = x^(4-2) = x^2."
+    },
+    {
+        "type": "algebra",
+        "question": "Solve: 4x + 1 = 2x + 9",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "hint": "Move all x terms to one side, constants to the other.",
+        "tip": "Check both sides after solving.",
+        "explanation": "Subtract 2x: 4x - 2x + 1 = 9, so 2x + 1 = 9. Subtract 1: 2x = 8. Divide by 2: x = 4. Check: 4(4) + 1 = 17, 2(4) + 9 = 17."
+    },
+    {
+        "type": "algebra",
+        "question": "Next in sequence: 1, 3, 6, 10, ___",
+        "options": ["12", "13", "14", "15"],
+        "answer": "15",
+        "hint": "Look for a pattern, possibly triangular numbers.",
+        "tip": "Check the sum of consecutive integers.",
+        "explanation": "Pattern: 1 = 1, 3 = 1+2, 6 = 1+2+3, 10 = 1+2+3+4. Next: 1+2+3+4+5 = 15."
+    },
+    {
+        "type": "algebra",
+        "question": "Factor: 3x^2 + 10x + 7",
+        "options": ["(3x + 1)(x + 7)", "(3x + 7)(x + 1)", "(x + 1)(3x + 7)", "(x + 7)(3x + 1)"],
+        "answer": "(3x + 1)(x + 7)",
+        "hint": "Find factors of 21 (3 * 7) that add to 10.",
+        "tip": "Try 1 and 9 for the middle term.",
+        "explanation": "Multiply 3 and 7: 3 * 7 = 21. Factors: 1 + 9 = 10. Split: 3x^2 + x + 9x + 7. Group: x(3x + 1) + 7(3x + 1) = (x + 7)(3x + 1). Verify: 3x^2 + 9x + x + 7 = 3x^2 + 10x + 7."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in utility plants maintain transformers and generators. They use oscilloscopes to analyze signals and ensure grid stability. Training covers reading technical manuals and adhering to NERC standards. Reliability is key to prevent power outages.",
+        "question": "What do electricians maintain in utility plants?",
+        "options": ["Lighting systems", "Transformers and generators", "HVAC units", "Solar panels"],
+        "answer": "Transformers and generators",
+        "hint": "Check the first sentence for maintenance focus.",
+        "tip": "Look for utility-specific equipment.",
+        "explanation": "The passage states, 'maintain transformers and generators,' making it correct."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in utility plants maintain transformers and generators...",
+        "question": "What tool analyzes signals?",
+        "options": ["Oscilloscope", "Multimeter", "Conduit bender", "Thermal imager"],
+        "answer": "Oscilloscope",
+        "hint": "Find the tool in the second sentence.",
+        "tip": "It’s related to signal analysis.",
+        "explanation": "The passage mentions, 'oscilloscopes to analyze signals,' confirming the answer."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in utility plants maintain transformers and generators...",
+        "question": "What is covered in training?",
+        "options": ["Selling equipment", "Reading technical manuals", "Building transformers", "Driving trucks"],
+        "answer": "Reading technical manuals",
+        "hint": "Look in the training section.",
+        "tip": "Focus on technical skills.",
+        "explanation": "The passage lists, 'reading technical manuals,' as part of training, making it correct."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in utility plants maintain transformers and generators...",
+        "question": "What standards are mentioned?",
+        "options": "NERC", "OSHA", "NEC", "ANSI"],
+        "answer": "NERC",
+        "hint": "Find regulatory standards in training.",
+        "tip": "It’s specific to utilities.",
+        "explanation": "The passage mentions, 'adhering to NERC standards,' making it correct."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in utility plants maintain transformers and generators...",
+        "question": "Why is reliability important?",
+        "options": ["Increase speed", "Prevent power outages", "Reduce costs", "Improve sales"],
+        "answer": "Prevent power outages",
+        "hint": "Check the last sentence.",
+        "tip": "Look for the impact of reliability.",
+        "explanation": "The passage states, 'Reliability is key to prevent power outages,' making it correct."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in utility plants maintain transformers and generators...",
+        "question": "What is NOT a focus of training?",
+        "options": ["Analyzing signals", "Reading manuals", "NERC standards", "Marketing utilities"],
+        "answer": "Marketing utilities",
+        "hint": "Identify tasks not listed.",
+        "tip": "Focus on technical skills only.",
+        "explanation": "The passage mentions signals, manuals, and standards, but not marketing, making it correct."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in utility plants maintain transformers and generators...",
+        "question": "What can be inferred about the work?",
+        "options": ["It’s simple", "It requires technical expertise", "It’s residential only", "It avoids tools"],
+        "answer": "It requires technical expertise",
+        "hint": "Consider tools and training.",
+        "tip": "Think about the skills needed.",
+        "explanation": "Tools like oscilloscopes and training in manuals imply technical expertise, making it correct."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in utility plants maintain transformers and generators...",
+        "question": "The word 'oscilloscopes' refers to:",
+        "options": ["Tools", "Signal analyzers", "Standards", "Generators"],
+        "answer": "Signal analyzers",
+        "hint": "Look for context with signal analysis.",
+        "tip": "It’s related to electrical signals.",
+        "explanation": "In context, 'oscilloscopes to analyze signals' means signal analyzers, making it correct."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in utility plants maintain transformers and generators...",
+        "question": "The tone of the passage is:",
+        "options": ["Critical", "Informative", "Humorous", "Doubtful"],
+        "answer": "Informative",
+        "hint": "Assess the purpose of the text.",
+        "tip": "It provides facts, not opinions.",
+        "explanation": "The passage offers factual details about utility electrician work, indicating an informative tone."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in utility plants maintain transformers and generators...",
+        "question": "What ensures grid stability?",
+        "options": ["Oscilloscopes", "NERC standards", "Transformers", "Technical manuals"],
+        "answer": "Oscilloscopes",
+        "hint": "Find tools in the second sentence.",
+        "tip": "Look for signal analysis.",
+        "explanation": "The passage states, 'oscilloscopes to analyze signals and ensure grid stability,' making it correct."
+    }
+]

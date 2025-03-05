@@ -1,0 +1,192 @@
+[
+    {
+        "type": "algebra",
+        "question": "Solve: 4x + 6 = 22",
+        "options": ["4", "5", "6", "7"],
+        "answer": "4",
+        "hint": "Isolate x by subtracting 6, then divide by 4.",
+        "tip": "Check: 4(4) + 6 = 22.",
+        "explanation": "Subtract 6: 4x + 6 - 6 = 22 - 6, so 4x = 16. Divide by 4: x = 16 / 4 = 4."
+    },
+    {
+        "type": "algebra",
+        "question": "Simplify: 3(x + 4) - 2x",
+        "options": ["x + 12", "3x + 12", "2x + 4", "5x + 12"],
+        "answer": "x + 12",
+        "hint": "Distribute 3, then combine like terms.",
+        "tip": "Focus on distribution first.",
+        "explanation": "Distribute: 3(x + 4) = 3x + 12. Subtract 2x: 3x + 12 - 2x = x + 12."
+    },
+    {
+        "type": "algebra",
+        "question": "Next in sequence: 5, 10, 15, 20, ___",
+        "options": ["22", "25", "30", "35"],
+        "answer": "25",
+        "hint": "Find the pattern by checking differences.",
+        "tip": "Each number increases by 5.",
+        "explanation": "Differences: 10 - 5 = 5, 15 - 10 = 5, 20 - 15 = 5. Add 5: 20 + 5 = 25."
+    },
+    {
+        "type": "algebra",
+        "question": "Factor: x^2 + 7x + 12",
+        "options": ["(x + 3)(x + 4)", "(x + 2)(x + 6)", "(x + 1)(x + 12)", "(x + 4)(x + 3)"],
+        "answer": "(x + 3)(x + 4)",
+        "hint": "Find factors of 12 that add to 7.",
+        "tip": "Try 3 and 4.",
+        "explanation": "Numbers: 3 × 4 = 12, 3 + 4 = 7. Factors: (x + 3)(x + 4). Verify: x^2 + 4x + 3x + 12 = x^2 + 7x + 12."
+    },
+    {
+        "type": "algebra",
+        "question": "If y = 3x + 1 and x = 5, find y",
+        "options": ["14", "15", "16", "17"],
+        "answer": "16",
+        "hint": "Substitute x = 5 into the equation.",
+        "tip": "Calculate step-by-step.",
+        "explanation": "Substitute: y = 3(5) + 1 = 15 + 1 = 16."
+    },
+    {
+        "type": "algebra",
+        "question": "Solve: (x/5) - 3 = 2",
+        "options": ["10", "15", "20", "25"],
+        "answer": "25",
+        "hint": "Isolate x by adding 3, then multiply by 5.",
+        "tip": "Check: (25/5) - 3 = 2.",
+        "explanation": "Add 3: (x/5) - 3 + 3 = 2 + 3, so x/5 = 5. Multiply by 5: x = 5 × 5 = 25."
+    },
+    {
+        "type": "algebra",
+        "question": "Simplify: x^3 * x^2",
+        "options": ["x^5", "x^6", "2x^5", "x^2"],
+        "answer": "x^5",
+        "hint": "Add the exponents when multiplying same bases.",
+        "tip": "Remember the rule for exponents.",
+        "explanation": "x^3 * x^2 = x^(3+2) = x^5."
+    },
+    {
+        "type": "algebra",
+        "question": "Solve: 3x - 5 = x + 7",
+        "options": ["4", "5", "6", "7"],
+        "answer": "6",
+        "hint": "Move all x terms to one side, constants to the other.",
+        "tip": "Check both sides after solving.",
+        "explanation": "Subtract x: 3x - x - 5 = 7, so 2x - 5 = 7. Add 5: 2x = 12. Divide by 2: x = 6. Check: 3(6) - 5 = 13, x + 7 = 6 + 7 = 13."
+    },
+    {
+        "type": "algebra",
+        "question": "Next in sequence: 1, 4, 9, 16, ___",
+        "options": ["20", "21", "25", "30"],
+        "answer": "25",
+        "hint": "Recognize the pattern as squares.",
+        "tip": "Check the squares of consecutive integers.",
+        "explanation": "Pattern: 1 = 1^2, 4 = 2^2, 9 = 3^2, 16 = 4^2. Next: 5^2 = 25."
+    },
+    {
+        "type": "algebra",
+        "question": "Factor: 2x^2 + 9x + 4",
+        "options": ["(2x + 1)(x + 4)", "(2x + 4)(x + 1)", "(x + 1)(2x + 4)", "(x + 4)(2x + 1)"],
+        "answer": "(2x + 1)(x + 4)",
+        "hint": "Find factors of 8 (2 * 4) that add to 9.",
+        "tip": "Try 1 and 8 for the middle term.",
+        "explanation": "Multiply 2 and 4: 2 * 4 = 8. Factors: 1 + 8 = 9. Split: 2x^2 + x + 8x + 4. Group: x(2x + 1) + 4(2x + 1) = (x + 4)(2x + 1). Verify: 2x^2 + 8x + x + 4 = 2x^2 + 9x + 4."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in commercial buildings install lighting and HVAC systems. They use conduit benders to route wires and ensure compliance with NEC codes. Training focuses on reading blueprints and troubleshooting circuits. Precision is critical to avoid electrical hazards.",
+        "question": "What do electricians install in commercial buildings?",
+        "options": ["Solar panels", "Lighting and HVAC systems", "Wind turbines", "Office furniture"],
+        "answer": "Lighting and HVAC systems",
+        "hint": "Check the first sentence for installation focus.",
+        "tip": "Look for commercial-specific equipment.",
+        "explanation": "The passage states, 'install lighting and HVAC systems,' making it correct."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in commercial buildings install lighting and HVAC systems...",
+        "question": "What tool is used to route wires?",
+        "options": ["Conduit bender", "Thermal imager", "Voltmeter", "Anemometer"],
+        "answer": "Conduit bender",
+        "hint": "Find the tool in the second sentence.",
+        "tip": "It’s related to wiring.",
+        "explanation": "The passage mentions, 'conduit benders to route wires,' confirming the answer."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in commercial buildings install lighting and HVAC systems...",
+        "question": "What is emphasized in training?",
+        "options": ["Selling tools", "Reading blueprints", "Building systems", "Driving trucks"],
+        "answer": "Reading blueprints",
+        "hint": "Look in the training section.",
+        "tip": "Focus on technical skills.",
+        "explanation": "The passage lists, 'reading blueprints,' as part of training, making it correct."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in commercial buildings install lighting and HVAC systems...",
+        "question": "What codes are mentioned?",
+        "options": ["OSHA", "NEC", "ANSI", "ISO"],
+        "answer": "NEC",
+        "hint": "Find regulatory codes in the second sentence.",
+        "tip": "It’s a safety standard for electrical work.",
+        "explanation": "The passage mentions, 'compliance with NEC codes,' making it correct."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in commercial buildings install lighting and HVAC systems...",
+        "question": "Why is precision important?",
+        "options": ["Increase speed", "Avoid electrical hazards", "Reduce training", "Improve sales"],
+        "answer": "Avoid electrical hazards",
+        "hint": "Check the last sentence.",
+        "tip": "Look for the impact of errors.",
+        "explanation": "The passage states, 'Precision is critical to avoid electrical hazards,' making it correct."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in commercial buildings install lighting and HVAC systems...",
+        "question": "What is NOT a focus of training?",
+        "options": ["Troubleshooting circuits", "Reading blueprints", "NEC codes", "Marketing tools"],
+        "answer": "Marketing tools",
+        "hint": "Identify tasks not listed.",
+        "tip": "Focus on technical skills only.",
+        "explanation": "The passage mentions circuits, blueprints, and codes, but not marketing, making it correct."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in commercial buildings install lighting and HVAC systems...",
+        "question": "What can be inferred about the work?",
+        "options": ["It’s simple", "It requires technical expertise", "It’s outdoors only", "It avoids tools"],
+        "answer": "It requires technical expertise",
+        "hint": "Consider tools and training.",
+        "tip": "Think about the skills needed.",
+        "explanation": "Tools like conduit benders and training in blueprints imply technical expertise, making it correct."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in commercial buildings install lighting and HVAC systems...",
+        "question": "The word 'blueprints' refers to:",
+        "options": ["Tools", "Diagrams", "Codes", "Systems"],
+        "answer": "Diagrams",
+        "hint": "Look for context in training.",
+        "tip": "It’s related to reading.",
+        "explanation": "In context, 'reading blueprints' means understanding diagrams, making it correct."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in commercial buildings install lighting and HVAC systems...",
+        "question": "The tone of the passage is:",
+        "options": ["Critical", "Informative", "Humorous", "Doubtful"],
+        "answer": "Informative",
+        "hint": "Assess the purpose of the text.",
+        "tip": "It provides facts, not opinions.",
+        "explanation": "The passage offers factual details about commercial electrician work, indicating an informative tone."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in commercial buildings install lighting and HVAC systems...",
+        "question": "What ensures system safety?",
+        "options": ["Conduit benders", "NEC codes", "Blueprints", "HVAC systems"],
+        "answer": "NEC codes",
+        "hint": "Find safety measures in the second sentence.",
+        "tip": "Look for regulatory terms.",
+        "explanation": "The passage states, 'compliance with NEC codes,' ensuring safety, making it correct."
+    }
+]

@@ -1,0 +1,192 @@
+[
+    {
+        "type": "algebra",
+        "question": "Solve: 2x - 3 = 11",
+        "options": ["5", "6", "7", "8"],
+        "answer": "7",
+        "hint": "Isolate x by adding 3, then divide by 2.",
+        "tip": "Check: 2(7) - 3 = 11.",
+        "explanation": "Add 3: 2x - 3 + 3 = 11 + 3, so 2x = 14. Divide by 2: x = 14 / 2 = 7."
+    },
+    {
+        "type": "algebra",
+        "question": "Simplify: 5(x - 1) + 2x",
+        "options": ["7x - 5", "5x - 3", "7x - 3", "5x - 5"],
+        "answer": "7x - 5",
+        "hint": "Distribute 5, then combine like terms.",
+        "tip": "Focus on distribution first.",
+        "explanation": "Distribute: 5(x - 1) = 5x - 5. Add 2x: 5x - 5 + 2x = 7x - 5."
+    },
+    {
+        "type": "algebra",
+        "question": "Next in sequence: 4, 8, 16, 32, ___",
+        "options": ["48", "56", "64", "72"],
+        "answer": "64",
+        "hint": "Find the pattern by checking multiplication.",
+        "tip": "Each number doubles.",
+        "explanation": "Pattern: 4 × 2 = 8, 8 × 2 = 16, 16 × 2 = 32. Multiply by 2: 32 × 2 = 64."
+    },
+    {
+        "type": "algebra",
+        "question": "Factor: x^2 - 6x + 8",
+        "options": ["(x - 2)(x - 4)", "(x - 1)(x - 8)", "(x - 3)(x - 3)", "(x - 4)(x - 2)"],
+        "answer": "(x - 2)(x - 4)",
+        "hint": "Find factors of 8 that add to -6.",
+        "tip": "Try -2 and -4.",
+        "explanation": "Numbers: -2 × -4 = 8, -2 + -4 = -6. Factors: (x - 2)(x - 4). Verify: x^2 - 4x - 2x + 8 = x^2 - 6x + 8."
+    },
+    {
+        "type": "algebra",
+        "question": "If y = 4x - 2 and x = 3, find y",
+        "options": ["10", "11", "12", "13"],
+        "answer": "10",
+        "hint": "Substitute x = 3 into the equation.",
+        "tip": "Calculate step-by-step.",
+        "explanation": "Substitute: y = 4(3) - 2 = 12 - 2 = 10."
+    },
+    {
+        "type": "algebra",
+        "question": "Solve: (x/4) + 1 = 3",
+        "options": ["8", "10", "12", "14"],
+        "answer": "8",
+        "hint": "Isolate x by subtracting 1, then multiply by 4.",
+        "tip": "Check: (8/4) + 1 = 3.",
+        "explanation": "Subtract 1: (x/4) + 1 - 1 = 3 - 1, so x/4 = 2. Multiply by 4: x = 2 × 4 = 8."
+    },
+    {
+        "type": "algebra",
+        "question": "Simplify: (x^2)^3",
+        "options": ["x^5", "x^6", "x^8", "x^9"],
+        "answer": "x^6",
+        "hint": "Multiply the exponents when raising a power to a power.",
+        "tip": "Remember the power rule.",
+        "explanation": "(x^2)^3 = x^(2×3) = x^6."
+    },
+    {
+        "type": "algebra",
+        "question": "Solve: 5x + 2 = 3x + 10",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "hint": "Move all x terms to one side, constants to the other.",
+        "tip": "Check both sides after solving.",
+        "explanation": "Subtract 3x: 5x - 3x + 2 = 10, so 2x + 2 = 10. Subtract 2: 2x = 8. Divide by 2: x = 4. Check: 5(4) + 2 = 22, 3(4) + 10 = 22."
+    },
+    {
+        "type": "algebra",
+        "question": "Next in sequence: 2, 6, 12, 20, ___",
+        "options": ["28", "30", "32", "36"],
+        "answer": "30",
+        "hint": "Look for a pattern, possibly n^2 - n + 1.",
+        "tip": "Check the differences or formula.",
+        "explanation": "Pattern: 2 = 1^2 + 1, 6 = 2^2 + 2, 12 = 3^2 + 3, 20 = 4^2 + 4. Next: 5^2 + 5 = 25 + 5 = 30."
+    },
+    {
+        "type": "algebra",
+        "question": "Factor: 4x^2 + 12x + 5",
+        "options": ["(2x + 1)(2x + 5)", "(4x + 1)(x + 5)", "(2x + 5)(2x + 1)", "(4x + 5)(x + 1)"],
+        "answer": "(2x + 1)(2x + 5)",
+        "hint": "Find factors of 20 (4 * 5) that add to 12.",
+        "tip": "Try 2 and 10 for the middle term.",
+        "explanation": "Multiply 4 and 5: 4 * 5 = 20. Factors: 2 + 10 = 12. Split: 4x^2 + 2x + 10x + 5. Group: 2x(2x + 1) + 5(2x + 1) = (2x + 5)(2x + 1). Verify: 4x^2 + 10x + 2x + 5 = 4x^2 + 12x + 5."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in residential settings wire homes for power and lighting. They install junction boxes and ground systems to prevent shocks. Training includes using multimeters to test circuits and following local building codes. Safety is paramount to protect residents.",
+        "question": "What do electricians wire in residential settings?",
+        "options": ["Offices", "Homes for power and lighting", "Factories", "Turbines"],
+        "answer": "Homes for power and lighting",
+        "hint": "Check the first sentence for wiring focus.",
+        "tip": "Look for residential-specific tasks.",
+        "explanation": "The passage states, 'wire homes for power and lighting,' making it correct."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in residential settings wire homes for power and lighting...",
+        "question": "What prevents shocks?",
+        "options": ["Junction boxes", "Ground systems", "Multimeters", "Building codes"],
+        "answer": "Ground systems",
+        "hint": "Find safety measures in the second sentence.",
+        "tip": "It’s related to shock prevention.",
+        "explanation": "The passage mentions, 'ground systems to prevent shocks,' confirming the answer."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in residential settings wire homes for power and lighting...",
+        "question": "What tool tests circuits?",
+        "options": ["Junction box", "Multimeter", "Ground system", "Code book"],
+        "answer": "Multimeter",
+        "hint": "Look in the training section for testing tools.",
+        "tip": "It measures electrical properties.",
+        "explanation": "The passage states, 'using multimeters to test circuits,' making it correct."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in residential settings wire homes for power and lighting...",
+        "question": "What codes are followed?",
+        "options": ["NEC", "OSHA", "Local building codes", "IEEE"],
+        "answer": "Local building codes",
+        "hint": "Find regulatory codes in training.",
+        "tip": "It’s specific to residences.",
+        "explanation": "The passage mentions, 'following local building codes,' making it correct."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in residential settings wire homes for power and lighting...",
+        "question": "Why is safety paramount?",
+        "options": ["Increase efficiency", "Protect residents", "Reduce costs", "Speed up work"],
+        "answer": "Protect residents",
+        "hint": "Check the last sentence.",
+        "tip": "Look for the purpose of safety.",
+        "explanation": "The passage states, 'Safety is paramount to protect residents,' making it correct."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in residential settings wire homes for power and lighting...",
+        "question": "What is NOT a focus of training?",
+        "options": ["Testing circuits", "Installing junction boxes", "Local codes", "Selling homes"],
+        "answer": "Selling homes",
+        "hint": "Identify tasks not listed.",
+        "tip": "Focus on technical skills only.",
+        "explanation": "The passage mentions circuits, boxes, and codes, but not selling, making it correct."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in residential settings wire homes for power and lighting...",
+        "question": "What can be inferred about the work?",
+        "options": ["It’s complex", "It requires safety focus", "It’s outdoors only", "It avoids tools"],
+        "answer": "It requires safety focus",
+        "hint": "Consider safety and training.",
+        "tip": "Think about resident protection.",
+        "explanation": "Safety for residents and ground systems imply a focus on safety, making it correct."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in residential settings wire homes for power and lighting...",
+        "question": "The word 'junction boxes' refers to:",
+        "options": ["Tools", "Connection points", "Codes", "Wires"],
+        "answer": "Connection points",
+        "hint": "Look for context with wiring.",
+        "tip": "It’s related to electrical connections.",
+        "explanation": "In context, 'junction boxes' are connection points for wires, making it correct."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in residential settings wire homes for power and lighting...",
+        "question": "The tone of the passage is:",
+        "options": ["Critical", "Informative", "Humorous", "Skeptical"],
+        "answer": "Informative",
+        "hint": "Assess the purpose of the text.",
+        "tip": "It provides facts, not opinions.",
+        "explanation": "The passage offers factual details about residential electrician work, indicating an informative tone."
+    },
+    {
+        "type": "reading",
+        "passage": "Electricians in residential settings wire homes for power and lighting...",
+        "question": "What ensures resident safety?",
+        "options": ["Multimeters", "Ground systems", "Junction boxes", "Local codes"],
+        "answer": "Ground systems",
+        "hint": "Find safety measures in the second sentence.",
+        "tip": "Look for shock prevention.",
+        "explanation": "The passage states, 'ground systems to prevent shocks,' ensuring resident safety, making it correct."
+    }
+]
